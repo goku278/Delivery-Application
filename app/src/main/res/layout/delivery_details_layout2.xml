@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:id="@+id/llParent"
+    android:layout_height="150dp"
+    android:layout_margin="12dp"
+    android:background="@drawable/card_background2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivTruck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Truck Icon"
+        android:src="@drawable/truck_icon" />
+
+    <TextView
+        android:id="@+id/tvAddress2"
+        android:padding="7dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="address"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+</LinearLayout>

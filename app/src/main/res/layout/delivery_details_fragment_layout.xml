@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delivery_details_background"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="Order id: " />
+
+                    <TextView
+                        android:id="@+id/tvOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="Order Id" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="Order Number:  " />
+
+                    <TextView
+                        android:id="@+id/tvOrderNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="Order Number" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="Order Bill:  " />
+
+                    <TextView
+                        android:id="@+id/tvOrderBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="OrderBill" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:alignItems="center"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="Address:  " />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:maxLines="7"
+                        android:text="Address" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:alignItems="center"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="35dp"
+                        android:text="Take Picture:  "
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/ivTakePicture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="12dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/photo_image_background"
+                        android:gravity="center" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Order Quality: " />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:alignItems="center"
+                    app:justifyContent="space_between">
+
+                    <LinearLayout
+                        android:id="@+id/llGood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:background="@drawable/quality_good_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Good"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/ivGoodQuality"
+                            android:layout_width="0dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/good_quality_mark_background"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDamaged"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/red_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Damaged"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/ivBadQuality"
+                            android:layout_width="0dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/bad_quality_background"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Spinner
+                    android:id="@+id/custom_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/spinner_dropdown_background"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:alignItems="center"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:text="Amount:  " />
+
+                    <EditText
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/textview_background"
+                        android:digits="0123456789"
+                        android:editable="true"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="Amount"
+                        android:textColorHint="@color/white" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Button
+                    android:id="@+id/btSubmit"
+                    android:layout_marginStart="35dp"
+                    android:textSize="11sp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/textview_background"
+                    android:text="Submit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"></TextView>
+
+            </LinearLayout>
+
+
+            <!--    </LinearLayout>-->
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
